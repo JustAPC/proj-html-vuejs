@@ -6,7 +6,12 @@
 
     <div class="header-menu">
       <ul class="d-flex aicenter">
-        <li v-for="(elm, i) in menuListItems" :key="i" class="text-uppercase pt-4 active">
+        <li
+          v-for="(elm, i) in menuListItems"
+          :key="i"
+          class="text-uppercase pt-4"
+          :class="{ active: elm.activePage }"
+        >
           <a :href="elm.link" class="px-3">{{ elm.title }}</a>
         </li>
       </ul>
@@ -25,32 +30,32 @@ export default {
         {
           title: "Home",
           link: "#",
-          active: true,
+          activePage: true,
         },
         {
           title: "About",
           link: "#",
-          active: false,
+          activePage: false,
         },
         {
           title: "Projects",
           link: "#",
-          active: false,
+          activePage: false,
         },
         {
           title: "Services",
           link: "#",
-          active: false,
+          activePage: false,
         },
         {
           title: "Blog",
           link: "#",
-          active: false,
+          activePage: false,
         },
         {
           title: "Contact",
           link: "#",
-          active: false,
+          activePage: false,
         },
       ],
     };
@@ -64,7 +69,9 @@ export default {
 
 .active {
   border-top: 2px solid $border-color-white1;
-  color: $text-color-white1;
+  a {
+    color: $text-color-white1;
+  }
 }
 
 ul li {

@@ -7,7 +7,7 @@
       <div class="container-p p-absolute">
         <NavbarItems />
 
-        <div class="w-90 hero-text-container jcbetween">
+        <div class="w-90 hero-text-container jcbetween ps-5">
           <div>
             <div class="d-inline-block divider"></div>
             <span class="text-white text-uppercase">Always the best way you need it</span>
