@@ -1,23 +1,15 @@
 <template>
-  <div class="consultant-section container pt-5">
-    <div class="p-5 d-flex align-items-center">
-      <div>
-        <h3 class="text-uppercase fw-bold">our consultants can help you</h3>
-      </div>
-      <div class="d-inline-block divider position-absolute"></div>
-    </div>
-    <ConsultingCard />
-  </div>
+  <ConsultantSection />
 </template>
 
 <script>
-import ConsultingCard from "./partials/ConsultingCard.vue";
+import ConsultantSection from "./ConsultantSection.vue";
 
 export default {
   name: "MainComp",
 
   components: {
-    ConsultingCard,
+    ConsultantSection,
   },
 
   props: {},
