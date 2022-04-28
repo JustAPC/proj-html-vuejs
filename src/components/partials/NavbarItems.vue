@@ -9,10 +9,10 @@
         <li
           v-for="(elm, i) in menuListItems"
           :key="i"
-          class="text-uppercase pt-4"
+          class="align-items-center text-uppercase pt-4 mx-3"
           :class="{ active: elm.activePage }"
         >
-          <a :href="elm.link" class="px-3">{{ elm.title }}</a>
+          <a :href="elm.link" class="">{{ elm.title }}</a>
         </li>
       </ul>
     </div>
@@ -68,7 +68,7 @@ export default {
 @import "../../assets/styles/mystyle.css";
 
 .active {
-  border-top: 2px solid $border-color-white1;
+  border-top: 3px solid $border-color-white1;
   a {
     color: $text-color-white1;
   }

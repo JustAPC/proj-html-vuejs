@@ -105,7 +105,7 @@ button {
 .play-icon {
   margin-left: 30px;
   color: $text-color-green;
-  padding: 18px;
+  padding: 18px 20px;
   border-radius: 50%;
   border: 2px solid $text-color-white1;
   cursor: pointer;
