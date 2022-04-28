@@ -2,12 +2,12 @@
   <div>
     <header class="p-relative d-flex">
       <div class="h-100 flex-grow waves-bg"></div>
-      <div class="h-100 w-67 hero-img"></div>
+      <div class="h-100 hero-img"></div>
 
       <div class="container-p p-absolute">
         <NavbarItems />
 
-        <div class="w-90 hero-text-container jcbetween ps-5">
+        <div class="w-90 hero-text-container jcbetween ps-4">
           <div>
             <div class="d-inline-block divider"></div>
             <span class="text-white text-uppercase">Always the best way you need it</span>
@@ -60,6 +60,7 @@ header {
 .hero-img {
   background-image: url(../assets/images/portrait-of-young-architect-woman-on-meeting-KFZCE3A.jpg);
   background-size: cover;
+  width: 66%;
 }
 
 .hero-text-container {
