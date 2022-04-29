@@ -1,20 +1,22 @@
 <template>
-  <div class="d-flex jcbetween">
-    <div class="logo-container pt-4 ps-6">
-      <img src="../../assets/images/logotype.png" alt="logo phlox" class="jcs w-35" />
-    </div>
+  <div class="position-absolute w-100">
+    <div class="d-flex jcbetween">
+      <div class="logo-container pt-4 ps-6">
+        <img src="../../assets/images/logotype.png" alt="logo phlox" class="logo ps-4" />
+      </div>
 
-    <div class="header-menu">
-      <ul class="d-flex aicenter">
-        <li
-          v-for="(elm, i) in menuListItems"
-          :key="i"
-          class="align-items-center text-uppercase pt-4 mx-3"
-          :class="{ active: elm.activePage }"
-        >
-          <a :href="elm.link" class="">{{ elm.title }}</a>
-        </li>
-      </ul>
+      <div class="header-menu me-5">
+        <ul class="d-flex aicenter me-5">
+          <li
+            v-for="(elm, i) in menuListItems"
+            :key="i"
+            class="align-items-center text-uppercase pt-4 mx-3"
+            :class="{ active: elm.activePage }"
+          >
+            <a :href="elm.link" class="">{{ elm.title }}</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
@@ -66,6 +68,14 @@ export default {
 <style scoped lang="scss">
 @import "../../assets/styles/mystyles.scss";
 @import "../../assets/styles/mystyle.css";
+
+div {
+  z-index: 1000;
+}
+
+.logo {
+  width: 40%;
+}
 
 .active {
   border-top: 3px solid $border-color-white1;

@@ -1,37 +1,25 @@
 <template>
   <div>
-    <header class="p-relative d-flex">
-      <div class="h-100 flex-grow waves-bg"></div>
-      <div class="h-100 hero-img"></div>
-
-      <div class="container-p p-absolute">
-        <NavbarItems />
-
-        <div class="w-90 hero-text-container jcbetween ps-4">
-          <div>
-            <div class="d-inline-block divider"></div>
-            <span class="text-white text-uppercase">Always the best way you need it</span>
-          </div>
-          <div class="w-40">
-            <h1 class="text-white text-uppercase hero-text">the best business consulting</h1>
-          </div>
-          <div>
-            <button class="text-uppercase">Read More</button>
-            <div class="d-inline-block"><i class="fa-solid fa-play play-icon"></i></div>
-          </div>
-        </div>
-      </div>
+    <header class="d-flex justify-content-center">
+      <NavbarItems />
     </header>
+
+    <main class="hero-section d-flex position-relative">
+      <HeroDescription />
+      <div class="hero-img col-8"></div>
+    </main>
   </div>
 </template>
 
 <script>
 import NavbarItems from "./partials/NavbarItems.vue";
+import HeroDescription from "./partials/HeroDescription.vue";
 
 export default {
   name: "HeaderComp",
   components: {
     NavbarItems,
+    HeroDescription,
   },
   props: {},
 };
@@ -41,74 +29,13 @@ export default {
 @import "../assets/styles/mystyles.scss";
 @import "../assets/styles/mystyle.css";
 
-header {
+.hero-section {
   height: 100vh;
-  width: 100vw;
-}
-
-.container-p {
-  top: 0;
-  left: 45px;
-  width: 90%;
-  margin: 0 auto;
-}
-
-.waves-bg {
-  background-image: url(../assets/images/violet-bg-1.png);
 }
 
 .hero-img {
   background-image: url(../assets/images/portrait-of-young-architect-woman-on-meeting-KFZCE3A.jpg);
   background-size: cover;
-  width: 66%;
-}
-
-.hero-text-container {
-  padding-top: 250px;
-  height: 720px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-
-  span {
-    letter-spacing: 3px;
-    font-size: 1.1rem;
-  }
-
-  h1 {
-    font-weight: 1000;
-  }
-}
-
-.hero-text {
-  font-size: 6rem;
-  line-height: 90px;
-}
-
-.divider {
-  width: 50px;
-  height: 3px;
-  background-color: $bg-color-green;
-  margin-right: 20px;
-}
-
-button {
-  padding: 20px 60px;
-  border: 0;
-  letter-spacing: 3px;
-  background-color: $bg-color-green;
-  &:hover {
-    color: white;
-    background-color: $bg-color-red;
-  }
-}
-
-.play-icon {
-  margin-left: 30px;
-  color: $text-color-green;
-  padding: 18px 20px;
-  border-radius: 50%;
-  border: 2px solid $text-color-white1;
-  cursor: pointer;
+  z-index: 1;
 }
 </style>
