@@ -3,9 +3,9 @@
     <div v-for="(elm, i) in clientCard" :key="i">
       <div
         class="clients-bg"
-        :style="{ backgroundImage: 'url(' + elm.img + ')' }"
         @mouseover="mouseOver(i)"
         @mouseleave="hover = false"
+        :style="{ backgroundImage: 'url(' + elm.img + ')' }"
       >
         <div
           class="h-100 d-flex align-items-end hover-container"

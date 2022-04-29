@@ -1,5 +1,5 @@
 <template>
-  <div class="violet-bg text-white" style="height: 1000px">
+  <div class="violet-bg text-white">
     <div class="col-10 mx-auto">
       <div>
         <div class="green-rule"></div>
@@ -17,7 +17,7 @@
         </div>
       </div>
 
-      <ClientCards class="pt-5" />
+      <ClientCards class="py-5" />
     </div>
   </div>
 </template>

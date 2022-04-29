@@ -47,4 +47,8 @@ export default {
   margin-right: 20px;
   display: inline-block;
 }
+
+.pt-6 {
+  padding-top: 7rem;
+}
 </style>
