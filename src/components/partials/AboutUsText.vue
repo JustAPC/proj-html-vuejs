@@ -2,7 +2,7 @@
   <div>
     <div class="about-us-text-container d-flex flex-column justify-content-between">
       <div class="d-flex">
-        <div class="divider me-3"></div>
+        <div class="green-rule me-3"></div>
         <span class="text-uppercase text-white"> About Us</span>
       </div>
 
@@ -29,11 +29,8 @@ export default {
 
 <style scoped lang="scss">
 @import "../../assets/styles/mystyles.scss";
-.divider {
+.green-rule {
   margin-top: 0.9rem;
-  width: 50px;
-  height: 3px;
-  background-color: $bg-color-green;
 }
 
 .about-us-text-container {

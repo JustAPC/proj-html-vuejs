@@ -39,4 +39,12 @@ export default {
 .violet-bg {
   background-color: $bg-color-violet;
 }
+
+.green-rule {
+  width: 50px;
+  height: 3px;
+  background-color: $bg-color-green;
+  margin-right: 20px;
+  display: inline-block;
+}
 </style>

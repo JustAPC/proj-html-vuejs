@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import ConsultingCard from "./partials/ConsultingCard.vue";
+import ConsultingCard from "../partials/ConsultingCard.vue";
 
 export default {
   name: "ConsultantSection",
@@ -27,7 +27,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../assets/styles/mystyles.scss";
+@import "../../assets/styles/mystyles.scss";
 
 .consultant-section {
   height: 95vh;

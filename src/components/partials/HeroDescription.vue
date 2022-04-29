@@ -2,7 +2,7 @@
   <div class="waves-bg col-4">
     <div class="hero-description d-flex flex-column justify-content-between position-absolute">
       <div>
-        <div class="d-inline-block divider"></div>
+        <div class="green-rule"></div>
         <span class="text-white text-uppercase fs-5">Always the best way you need it</span>
       </div>
 
@@ -42,13 +42,6 @@ export default {
   font-size: 6rem;
   line-height: 90px;
   font-weight: bold;
-}
-
-.divider {
-  width: 50px;
-  height: 3px;
-  background-color: $bg-color-green;
-  margin-right: 20px;
 }
 
 button {

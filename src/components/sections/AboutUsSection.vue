@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import AboutUsText from "./partials/AboutUsText.vue";
+import AboutUsText from "../partials/AboutUsText.vue";
 export default {
   name: "AboutUsSection",
   components: {
@@ -36,17 +36,17 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../assets/styles/mystyles.scss";
+@import "../../assets/styles/mystyles.scss";
 
 .hero-img {
   height: 900px;
-  background-image: url(../assets/images/business-people-working-together-on-project-and-5FHSKBL.jpg);
+  background-image: url(../../assets/images/business-people-working-together-on-project-and-5FHSKBL.jpg);
   background-repeat: no-repeat;
 }
 
 .about-us-text-bg {
   height: 1340px;
-  background-image: url(../assets/images/violet-bg-2.png);
+  background-image: url(../../assets/images/violet-bg-2.png);
   background-repeat: no-repeat;
 }
 
@@ -78,5 +78,8 @@ export default {
   color: $text-color-white1;
   background-color: $bg-color-red;
   letter-spacing: 2px;
+  &:hover {
+    background-color: $bg-color-violet;
+  }
 }
 </style>

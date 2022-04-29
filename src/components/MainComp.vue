@@ -2,12 +2,14 @@
   <div>
     <ConsultantSection />
     <AboutUsSection />
+    <ProjectSection />
   </div>
 </template>
 
 <script>
-import ConsultantSection from "./ConsultantSection.vue";
-import AboutUsSection from "./AboutUsSection.vue";
+import ConsultantSection from "./sections/ConsultantSection.vue";
+import AboutUsSection from "./sections/AboutUsSection.vue";
+import ProjectSection from "./sections/ProjectSection.vue";
 
 export default {
   name: "MainComp",
@@ -15,6 +17,7 @@ export default {
   components: {
     ConsultantSection,
     AboutUsSection,
+    ProjectSection,
   },
 
   props: {},
