@@ -4,6 +4,7 @@
     <AboutUsSection />
     <ProjectSection />
     <TestimonialSection />
+    <BlogSection />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import ConsultantSection from "./sections/ConsultantSection.vue";
 import AboutUsSection from "./sections/AboutUsSection.vue";
 import ProjectSection from "./sections/ProjectSection.vue";
 import TestimonialSection from "./sections/TestimonialSection.vue";
+import BlogSection from "./sections/BlogSection.vue";
 
 export default {
   name: "MainComp",
@@ -21,6 +23,7 @@ export default {
     AboutUsSection,
     ProjectSection,
     TestimonialSection,
+    BlogSection,
   },
 
   props: {},
