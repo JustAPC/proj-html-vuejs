@@ -35,6 +35,7 @@
         </div>
       </div>
     </div>
+
     <div class="col-1 d-inline-block text-white ps-3">
       <a href=""><i class="fa-solid fa-arrow-up-long arrow-up"></i></a>
       <a href="" class="ps-3"><i class="fa-solid fa-comment comment-icon"></i></a>
@@ -90,6 +91,9 @@ li a {
   color: $text-color-white4;
   text-decoration: none;
   text-transform: uppercase;
+  &:hover {
+    color: white;
+  }
 }
 
 .social-icons {

@@ -7,11 +7,8 @@
         @mouseleave="hover = false"
         :style="{ backgroundImage: 'url(' + elm.img + ')' }"
       >
-        <div
-          class="h-100 d-flex align-items-end hover-container"
-          v-show="hover && i === mouseOverIndex"
-        >
-          <div class="d-flex justify-content-between px-3 pb-3 w-100">
+        <div class="h-100 d-flex align-items-end hover-box" v-if="hover && i === mouseOverIndex">
+          <div class="d-flex justify-content-between px-3 pb-3 w-100 hover-container">
             <div>
               <h5 class="fw-bold">{{ elm.name }}</h5>
               <span>{{ elm.category }}</span>
@@ -73,8 +70,18 @@ export default {
   background-size: cover;
 }
 
-.hover-container {
+.hover-box {
   background-color: rgba($color: red, $alpha: 0.5);
+  &:hover > .hover-container {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.hover-container {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
 }
 
 span {
