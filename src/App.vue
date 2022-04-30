@@ -2,6 +2,7 @@
   <div id="app">
     <HeaderComp />
     <MainComp />
+    <FooterComp />
   </div>
 </template>
 
@@ -10,12 +11,14 @@ import "./assets/styles/mystyles.scss";
 
 import HeaderComp from "./components/HeaderComp.vue";
 import MainComp from "./components/MainComp.vue";
+import FooterComp from "./components/FooterComp.vue";
 
 export default {
   name: "App",
   components: {
     HeaderComp,
     MainComp,
+    FooterComp,
   },
 };
 </script>
@@ -36,10 +39,6 @@ export default {
   box-sizing: border-box;
 }
 
-.violet-bg {
-  background-color: $bg-color-violet;
-}
-
 .green-rule {
   width: 50px;
   height: 3px;
@@ -50,5 +49,9 @@ export default {
 
 .pt-6 {
   padding-top: 7rem;
+}
+
+body {
+  background-color: $bg-color-violet;
 }
 </style>

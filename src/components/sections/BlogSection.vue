@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-5 violet-bg">
+  <div class="pt-5">
     <div class="pt-5">
       <div class="col-10 mx-auto">
         <div class="green-rule border"></div>
@@ -74,6 +74,6 @@ export default {
 }
 
 .news-container {
-  padding-bottom: 250px;
+  padding-bottom: 300px;
 }
 </style>

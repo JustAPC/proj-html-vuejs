@@ -1,26 +1,24 @@
 <template>
-  <div class="violet-bg">
-    <div class="d-flex">
-      <div class="hero-img col-7 d-flex align-items-end position-relative">
-        <div class="get-started-banner position-absolute d-flex align-items-center">
-          <div class="offset-2 col-3">
-            <h2 class="banner-title ps-5">We help to deliver the business case</h2>
-          </div>
+  <div class="d-flex">
+    <div class="hero-img col-7 d-flex align-items-end position-relative">
+      <div class="get-started-banner position-absolute d-flex align-items-center">
+        <div class="offset-2 col-3">
+          <h2 class="banner-title ps-5">We help to deliver the business case</h2>
+        </div>
 
-          <div class="col-4 offset-1 get-started-description">
-            When, while lovely valley teems with vapour around meand meridian sun strikes the upper
-            impenetrable foliage of my trees, and but a thousand unknown
-          </div>
+        <div class="col-4 offset-1 get-started-description">
+          When, while lovely valley teems with vapour around meand meridian sun strikes the upper
+          impenetrable foliage of my trees, and but a thousand unknown
+        </div>
 
-          <div class="get-started d-flex flex-grow-1 h-100 align-items-end justify-content-end">
-            <button class="get-started-button">get started</button>
-          </div>
+        <div class="get-started d-flex flex-grow-1 h-100 align-items-end justify-content-end">
+          <button class="get-started-button">get started</button>
         </div>
       </div>
+    </div>
 
-      <div class="about-us-text-bg col-5 pt-5">
-        <AboutUsText />
-      </div>
+    <div class="about-us-text-bg col-5 pt-5">
+      <AboutUsText />
     </div>
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div class="violet-bg pb-5">
+  <div class="pb-5">
     <div class="mx-auto col-10 pt-6 pb-5">
       <div class="text-white">
         <div class="text-center text-uppercase fs-5">Testimonial</div>

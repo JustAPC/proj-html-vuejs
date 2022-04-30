@@ -1,5 +1,5 @@
 <template>
-  <div class="consultant-section pt-5">
+  <div class="consultant-section pt-5 bg-white">
     <div class="pt-5 d-flex align-items-center offset-2">
       <div class="pt-5 col-4 me-4">
         <h3 class="text-uppercase fw-bold">our consultants can help you</h3>
