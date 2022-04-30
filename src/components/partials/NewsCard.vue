@@ -33,7 +33,7 @@ export default {
 @import "../../assets/styles/mystyles.scss";
 
 .news-container {
-  bottom: -75px;
+  bottom: -80px;
   right: 16px;
   z-index: 1000;
   background-color: white;

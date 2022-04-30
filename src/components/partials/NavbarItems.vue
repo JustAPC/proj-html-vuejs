@@ -1,19 +1,19 @@
 <template>
-  <div class="position-absolute w-100">
-    <div class="d-flex jcbetween">
-      <div class="logo-container pt-4 ps-6">
-        <img src="../../assets/images/logotype.png" alt="logo phlox" class="logo ps-4" />
+  <div class="navbar-container col-10 position-absolute">
+    <div class="d-flex justify-content-between align-items-center">
+      <div>
+        <img src="../../assets/images/logotype.png" alt="" class="logo" />
       </div>
 
-      <div class="header-menu me-5">
-        <ul class="d-flex aicenter me-5">
+      <div>
+        <ul class="d-flex">
           <li
             v-for="(elm, i) in menuListItems"
             :key="i"
-            class="align-items-center text-uppercase pt-4 mx-3"
+            class="text-uppercase pt-4 mx-3"
             :class="{ active: elm.activePage }"
           >
-            <a :href="elm.link" class="">{{ elm.title }}</a>
+            <a :href="elm.url">{{ elm.page }}</a>
           </li>
         </ul>
       </div>
@@ -30,33 +30,33 @@ export default {
     return {
       menuListItems: [
         {
-          title: "Home",
-          link: "#",
+          page: "Home",
+          url: "#",
           activePage: true,
         },
         {
-          title: "About",
-          link: "#",
+          page: "About",
+          url: "#",
           activePage: false,
         },
         {
-          title: "Projects",
-          link: "#",
+          page: "Projects",
+          url: "#",
           activePage: false,
         },
         {
-          title: "Services",
-          link: "#",
+          page: "Services",
+          url: "#",
           activePage: false,
         },
         {
-          title: "Blog",
-          link: "#",
+          page: "Blog",
+          url: "#",
           activePage: false,
         },
         {
-          title: "Contact",
-          link: "#",
+          page: "Contact",
+          url: "#",
           activePage: false,
         },
       ],
@@ -69,12 +69,12 @@ export default {
 @import "../../assets/styles/mystyles.scss";
 @import "../../assets/styles/mystyle.css";
 
-div {
-  z-index: 1000;
+.navbar-container {
+  z-index: 2;
 }
 
 .logo {
-  width: 40%;
+  width: 36%;
 }
 
 .active {
@@ -91,5 +91,9 @@ ul li {
 li a {
   color: $text-color-white2;
   text-decoration: none;
+}
+
+a:hover {
+  color: $text-color-white1;
 }
 </style>

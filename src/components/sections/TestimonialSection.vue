@@ -1,5 +1,5 @@
 <template>
-  <div class="pb-5">
+  <div class="testimonial-section">
     <div class="mx-auto col-10 pt-6 pb-5">
       <div class="text-white">
         <div class="text-center text-uppercase fs-5">Testimonial</div>
@@ -10,11 +10,8 @@
       </div>
     </div>
 
-    <div>
-      <div class="squares-bg border"></div>
-      <div class="witnesses-banner col-11 offset-1">
-        <WitnessesBar />
-      </div>
+    <div class="witnesses-banner col-11 offset-1">
+      <WitnessesBar />
     </div>
   </div>
 </template>
@@ -40,13 +37,7 @@ export default {
   z-index: 2;
 }
 
-.squares-bg {
-  position: absolute;
-  height: 1000px;
-  left: -2px;
-  bottom: 0;
-  background-repeat: no-repeat;
-  background-image: url(../../assets/images/violet-bg-3.png);
-  z-index: 1;
+.testimonial-section {
+  padding-bottom: 8.5rem;
 }
 </style>

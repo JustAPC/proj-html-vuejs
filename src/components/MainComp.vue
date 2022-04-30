@@ -3,7 +3,10 @@
     <ConsultantSection />
     <AboutUsSection />
     <ProjectSection />
-    <TestimonialSection />
+    <div class="position-relative">
+      <TestimonialSection />
+      <div class="squares-bg"></div>
+    </div>
     <BlogSection />
     <GetStarted />
   </div>
@@ -35,4 +38,15 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/styles/mystyles.scss";
+
+.squares-bg {
+  position: absolute;
+  height: 1712px;
+  width: 960px;
+  top: 304px;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/violet-bg-3.png);
+}
 </style>

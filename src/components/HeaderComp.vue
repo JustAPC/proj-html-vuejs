@@ -36,6 +36,6 @@ export default {
 .hero-img {
   background-image: url(../assets/images/portrait-of-young-architect-woman-on-meeting-KFZCE3A.jpg);
   background-size: cover;
-  z-index: 1;
+  z-index: 0;
 }
 </style>
