@@ -49,7 +49,7 @@ export default {
         {
           name: "John Doe",
           company: "Web Development",
-          img: require("../../assets/images/oliver-ragfelt-488196-unsplash.jpg"),
+          img: require("../../assets/images/12679.jpg"),
           speech:
             "When, while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a thousand unknown plants are noticed when I hear the buzz of the little",
         },
