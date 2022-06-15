@@ -1,10 +1,10 @@
 <template>
   <div>
-    <header class="d-flex justify-content-center">
+    <header class="d-flex justify-content-center position-relative">
       <NavbarItems />
     </header>
 
-    <main class="hero-section d-flex position-relative">
+    <main class="hero-section d-flex">
       <HeroDescription />
       <div class="hero-img col-8"></div>
     </main>
